@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUA GARRAFA TA AMASSADA</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.blinking {
+  animation: blink 1s infinite;
+  color: #ff00ff; /* Cor inicial */
+  text-shadow: 0 0 10px #ff00ff; /* Sombra */
+}
+
+.pulsating {
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    color: #ff00ff; /* Cor inicial */
+    text-shadow: 0 0 10px #ff00ff; /* Sombra inicial */
+  }
+  50% {
+    color: #00ffff; /* Cor no meio da animação */
+    text-shadow: 0 0 20px #00ffff; /* Sombra no meio da animação */
+  }
+  100% {
+    color: #ff00ff; /* Cor final */
+    text-shadow: 0 0 10px #ff00ff; /* Sombra final */
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 class="blinking">TUA GARRAFA TA AMASSADA</h1>
+</div>
+</body>
+</html>
